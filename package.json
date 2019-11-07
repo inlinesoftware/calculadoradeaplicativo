@@ -1,0 +1,12 @@
+{
+  "name": "calculadora-inline",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/atirson/calculadora-inline.git",
+  "author": "Atirson Fabiano Barbosa de Oliveira <fabiano.oliveira2213@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0"
+  }
+}

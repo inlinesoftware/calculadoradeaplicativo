@@ -1,0 +1,291 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+body {
+  background-color: #E6ECF0;
+}
+
+#regForm {
+  background-color: #ffffff;
+  margin: 50px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+  border-radius: 10px;
+}
+
+h1, h2 {
+  text-align: center;  
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+.tab i {
+  margin: 25px;
+}
+
+.tab p {
+  text-align: center;
+}
+
+/* Colors icons */
+.green-fix {
+  color: #91C22F;
+}
+
+.fa-apple-fix {
+ color: #214B8F;
+}
+
+.fa-desktop-fix {
+  color: #F5B154;
+}
+
+.icons-2 {
+  align-items: center;
+}
+
+.fa-geo {
+  width: 4.8em;
+}
+
+.fa-geo-fix {
+  filter: grayscale(100%);
+	filter: rgb(97, 92, 92); 
+}
+
+.fa-cameras {
+  width: 5.5em;
+}
+
+.fa-cameras-fix {
+  filter: grayscale(100%);
+	filter: rgb(97, 92, 92);	  
+}
+
+.fa-ras {
+  width: 5em;
+}
+
+
+.fa-ras-fix {
+  filter: grayscale(100%);
+	filter: rgb(97, 92, 92); 
+}
+
+.fa-acelerometro {
+  width: 5.5em;
+}
+
+.fa-acelerometro-fix {
+  filter: grayscale(100%);
+	filter: rgb(97, 92, 92);	  
+}
+
+.fa-maps {
+  width: 4.5em;
+}
+
+
+.fa-maps-fix {
+  filter: grayscale(100%);
+	filter: rgb(97, 92, 92);
+}
+
+.fa-yes {
+  width: 4.5em;
+}
+
+
+.fa-yes-chat-fix {
+  filter: grayscale(100%);
+	filter: rgb(97, 92, 92);  
+}
+
+.fa-no {
+  width: 4.5em;
+}
+
+
+.fa-no-chat-fix {
+  filter: grayscale(100%);
+	filter: rgb(97, 92, 92);	  
+}
+
+.fa-yes-streaming {
+  width: 4.5em;
+}
+
+
+.fa-yes-streaming-fix {
+  filter: grayscale(100%);
+	filter: rgb(97, 92, 92);  
+}
+
+.fa-no-streaming-fix {
+  filter: grayscale(100%);
+	filter: rgb(97, 92, 92);	  
+}
+
+.fa-yes-painel-fix {
+  filter: grayscale(100%);
+	filter: rgb(97, 92, 92);	 
+}
+
+.fa-no-painel-fix {
+  filter: grayscale(100%);
+	filter: rgb(97, 92, 92);	 
+}
+
+.fa-yes-painelDados-fix {
+  filter: grayscale(100%);
+	filter: rgb(97, 92, 92);	 
+}
+
+.fa-no-painelDados-fix {
+  filter: grayscale(100%);
+	filter: rgb(97, 92, 92);	 
+}
+
+.circles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.circle {
+  width: 75px;
+  height:75px;
+  border-radius: 50%;
+  background: gray;
+  cursor: pointer;
+}
+
+.active-1 {
+  background: #214B8F;
+}
+
+.circle p {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 20px; 
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.tab .number input {
+  width: 70px;
+  border-radius: 5px;
+  text-align:center;
+}
+
+button {
+  background-color: #214B8F;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #214B8F;
+}
+
+
+/* Start Logo */
+
+.logo {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* End Logo */
+
+/* Title do Formulário */
+
+.title h1 {
+  margin-top: 30px;
+  color: #214B8F 
+}
+
+/* End Title do Forumulário */
+
+/* Start Footer */
+
+.rodape h4 {
+  text-align: center;
+  color: #214B8F;
+}
+
+/* End Footer */
+
+.textEmail {
+  text-align: center;
+  font-size: 18px;
+}
+
+.campoEmail input {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid #aaaaaa;
+  width: 450px;
+  border-radius: 4px;
+}
+/* Estilo Campo de Email */
+
+
+.whatsapp {
+  width: 80px;
+  height: 80px;
+}
+
+/*      RESPONSIVIDADE        */
+
+@media only screen and (max-width: 767px) {
+  #email{ 
+    width: 230px !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .grafico {
+    position: relative;
+    width: 450px;
+    height: 45vh;
+    margin-left: -80px;
+  }
+} 

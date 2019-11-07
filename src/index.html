@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/grid.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Calculadora Inline</title>
+</head>
+<body>
+  <!-- Section Logo -->
+  <div class="container">
+    <div class="logo">
+      <img src="../images/inline_logo.png">
+    </div>
+  </div>
+  <!-- End Section Logo -->
+
+  <!-- Title do Formulário -->
+  <section class="container">
+    <div class="title">
+      <h1 class="title2">Quanto irá custar seu projeto ?</h1>
+    </div>
+  </section>
+  <!-- Title do Formulário -->
+
+
+  <!-- Section Formulário -->
+  <form name="form" id="regForm" action="" >
+    <!-- One "tab" for each step in the form: -->
+    <div class="tab">
+      <label>1. Em quais plataformas seu a aplicativo irá atuar.</label>
+      <p class="text-center">
+        <i value="3" id="fa-android" class="fa fa-android fa-5x" data-toggle="tooltip" title="Android" aria-hidden="true"></i>
+        <i value="3" id="fa-apple" class="fa fa-apple fa-5x" data-toggle="tooltip" title="IOS" aria-hidden="true"></i>
+        <i value="3" id="fa-desktop" class="fa fa-desktop fa-5x" data-toggle="tooltip" title="Web" aria-hidden="true"></i>
+      </p>
+    </div>
+    <div class="tab">
+      <label>2. Quais recursos sua aplicação vai utilizar.</label>
+      <p class="icons-2">
+        <i value="1" aria-hidden="true">
+          <img id="fa-cameras" class="fa-cameras fa-cameras-fix" data-toggle="tooltip" title="Câmera" src="icon-img/camera.png">
+        </i>
+        <i value="1"  aria-hidden="true">
+          <img id="fa-ras" class="fa-ras fa-ras-fix" data-toggle="tooltip" title="Realidade Aumentada" src="icon-img/ra.png">
+        </i>
+        <i value="1" aria-hidden="true">
+            <img id="fa-geo" class="fa-geo fa-geo-fix" data-toggle="tooltip" title="Georeferênciamento" src="icon-img/geo.png">
+          </i>
+        <i value="1" aria-hidden="true">
+          <img id="fa-acelerometro" class="fa-acelerometro fa-acelerometro-fix"  data-toggle="tooltip" title="Acelerômetro" src="icon-img/acelerometro.png">
+        </i>
+        <i value="1"  aria-hidden="true">
+          <img id="fa-maps" class="fa-maps fa-maps-fix" data-toggle="tooltip" title="Mapas" src="icon-img/maps.png">
+        </i>
+      </p>    
+    </div>
+    <div class="tab">
+        <label>3. Sua aplicação necessita de <strong>chat</strong>.</label>
+        <p>
+          <i value="1" id="fa-yes-chat" class="fa fa-yes fa-yes-chat fa-yes-chat-fix" aria-hidden="true" data-toggle="tooltip" title="Sim"><img class="fa-yes" src="icon-img/yes.png"></i>
+          <i id="fa-no-chat" class="fa fa-no fa-no-chat fa-no-chat-fix" aria-hidden="true" data-toggle="tooltip" title="Não"><img class="fa-yes" src="icon-img/no.png"></i>
+        </p>
+    </div>
+    <div class="tab">
+        <label>4. Sua aplicação necessita de tramissão <strong>streaming</strong>.</label>
+        <p>
+          <i value="1" id="fa-yes-streaming" class="fa fa-yes fa-yes-streaming fa-yes-streaming-fix" aria-hidden="true" data-toggle="tooltip" title="Sim"><img class="fa-yes" src="icon-img/yes.png"></i>
+          <i id="fa-no-streaming" class="fa fa-no fa-no-streaming fa-no-streaming-fix" aria-hidden="true" data-toggle="tooltip" title="Não"><img class="fa-no" src="icon-img/no.png"></i>
+        </p>
+    </div>
+    <div class="tab">
+        <label>5. Quantas <strong>páginas</strong> sua aplicação vai ter.</label>
+        <div id="circle" class="circles">
+          <div value="1" class="circle 1"><p>5</p></div>
+          <div value="3" class="circle 3"><p>10</p></div>
+          <div value="6" class="circle 6"><p>15</p></div>
+          <div value="9" class="circle 9"><p>+15</p></div>
+        </div>
+    </div>
+    <div class="tab">
+        <label>6. Você precisa de um painel <strong>administrativo</strong>.</label>
+        <p>
+          <i value="7" id="fa-yes-painel" class="fa fa-yes fa-yes-painel fa-yes-painel-fix" aria-hidden="true" data-toggle="tooltip" title="Sim"><img class="fa-yes" src="icon-img/yes.png"></i>
+          <i id="fa-no-painel" class="fa fa-no fa-no-painel fa-no-painel-fix" aria-hidden="true" data-toggle="tooltip" title="Não"><img class="fa-yes" src="icon-img/no.png"></i>
+        </p>
+    </div>
+    <div class="tab">
+      <label>7. Você precisa de um <strong>painel analítico de dados.</strong>.</label>
+      <p>
+        <i value="7" id="fa-yes-painelDados" class="fa fa-yes fa-yes-painelDados fa-yes-painelDados-fix" aria-hidden="true" data-toggle="tooltip" title="Sim"><img class="fa-yes" src="icon-img/yes.png"></i>
+        <i id="fa-no-painelDados" class="fa fa-no fa-no-painelDados fa-no-painelDados-fix" aria-hidden="true" data-toggle="tooltip" title="Não"><img class="fa-yes" src="icon-img/no.png"></i>
+      </p>
+  </div>
+    <div class="tab">
+        <label>8. Terá integração com Banco de Dados de terceiros.</label>
+        <p class="number"><input id="bancoDados" type="number" min="0"></p>
+    </div>
+    
+    <div style="overflow:auto;">
+      <div style="float:right;">
+        <button class="anterior" type="button" id="prevBtn" onclick="Prev(-1)">Anterior</button>
+        <button type="button" id="nextBtn"  onclick="Prev(1)">Próximo</button>
+      </div>
+    </div>
+    <!-- Circles which indicates the steps of the form: -->
+    <div style="text-align:center;margin-top:40px;">
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+    </div>
+  </form>
+  <!-- Section Formulário -->
+ 
+  <!-- Start Value -->
+  <section class="resultados">
+    <div class="container">
+      <h1></h1>
+      <h2><a href="https://api.whatsapp.com/send?phone=5562992296531&text=Ol%C3%A1%20tenho%20interesse%20em%20conversar%20sobre%20um%20projeto%20e%20desenvolvimento%20de%20um%20aplicativo%20m%C3%B3vel...."> <img class="whatsapp" src="../images/whatsapp-logo-transparent-shadow.png" alt="Whatsapp"> </a></h2> 
+    </div>
+  </section>
+  <!-- End Value -->
+
+  <!-- Start Footer -->
+  <footer class="rodape">
+    <hr>
+    <div class="container">
+      <div class="grid-16"><h4>Inline Engenharia de Software &copy; Todos os Direitos Reservados</h4></div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
